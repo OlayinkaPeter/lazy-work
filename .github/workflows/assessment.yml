@@ -1,0 +1,31 @@
+name: assessment
+on:
+  push:
+    paths: ['assessment/**', '.github/workflows/assessment.yml']
+  pull_request:
+    paths: ['assessment/**', '.github/workflows/assessment.yml']
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: assessment
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install uv==0.12.23
+      - run: make all
+      - run: make prepare
+      - run: make check
+      - run: make benchmark
+      - run: make benchmark-real
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: assessment-evidence
+          path: |
+            assessment/evidence/
+            assessment/reports/

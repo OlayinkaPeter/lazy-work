@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    image: donor-targeting:local
+    ports:
+      - "127.0.0.1:8000:8000"
+    mem_limit: 2g
+    cpus: 4.0
+    init: true
+    stop_grace_period: 35s
+    environment:
+      # Explicit simulator clock; remove for a live warehouse and real wall-clock freshness.
+      REPLAY_AT: "2026-09-01T16:00:00+00:00"
+    volumes:
+      - ./data/artifacts:/app/data/artifacts:ro
+      - service-state:/app/data/service
+      - crm-outbox:/app/data/crm_outbox
+volumes:
+  service-state:
+  crm-outbox:

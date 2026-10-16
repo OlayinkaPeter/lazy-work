@@ -1,0 +1,24 @@
+uv lock --check
+Resolved 40 packages in 1ms
+uv run --frozen ruff check .
+All checks passed!
+uv run --frozen ruff format --check .
+31 files already formatted
+uv run --frozen pytest -q
+EE.........................................                              [100%]
+==================================== ERRORS ====================================
+_________ ERROR at setup of test_centroid_feature_matches_brute_force __________
+no data/warehouse/: run `make data` first
+______ ERROR at setup of test_features_parquet_reads_back_with_centroids _______
+no data/warehouse/: run `make data` first
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /workspace/lazy-work/assessment/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tests/test_pipeline.py::test_centroid_feature_matches_brute_force - Fai...
+ERROR tests/test_pipeline.py::test_features_parquet_reads_back_with_centroids
+41 passed, 1 warning, 2 errors in 1.87s
+make: *** [Makefile:44: check] Error 1

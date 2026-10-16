@@ -1,0 +1,40 @@
+{
+  "ready": {
+    "status": "ready",
+    "artifact_version": "synthetic",
+    "active_people": 250000,
+    "snapshot_at": "2026-10-16T22:19:26.299803+00:00",
+    "artifact_source": "synthetic-capacity-fixture",
+    "replay_mode": true,
+    "jobs": {}
+  },
+  "job": {
+    "job_id": "d72193c25fad4b138c78f44ace334a9b",
+    "request_id": "req_2003",
+    "status": "succeeded",
+    "accepted_at": 1792189583.3745968,
+    "updated_at": 1792189585.5009558,
+    "result": {
+      "member_count": 250000,
+      "artifact_version": "synthetic",
+      "artifact_source": "synthetic-capacity-fixture",
+      "snapshot_at": "2026-10-16T22:19:26.299803+00:00",
+      "fraction": 1.0,
+      "audience_file": "d72193c25fad4b138c78f44ace334a9b.npy",
+      "replay_mode": true,
+      "list_id": "list_7f0438c77f06",
+      "elapsed_seconds": 2.126350164413452,
+      "processing_seconds": 2.1146190419999584,
+      "deadline_met": true
+    },
+    "error": null
+  },
+  "restart": {
+    "same_job_after_restart": true,
+    "crm_lists_after_restart": 1,
+    "status": "succeeded"
+  },
+  "memory_limit_bytes": 2147483648,
+  "cpu_limit": 4.0,
+  "fixture": "synthetic; not assessment financial or eligibility validation"
+}

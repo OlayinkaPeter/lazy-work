@@ -1,0 +1,16 @@
+INFO:     Started server process [7]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
+2026-10-16 22:29:06,411 INFO donor_targeting.service.runtime job_completed id=63e82fbc555149b990182057bdb426ad members=250000 elapsed=2.239 deadline_met=True
+2026-10-16 22:29:08,529 INFO donor_targeting.service.runtime job_completed id=32e2bb623534440e945d86e486a70b6e members=250000 elapsed=4.252 deadline_met=True
+2026-10-16 22:29:10,643 INFO donor_targeting.service.runtime job_completed id=52d3976fcfac494aa1e6d2a4821cc787 members=250000 elapsed=6.363 deadline_met=True
+2026-10-16 22:29:12,762 INFO donor_targeting.service.runtime job_completed id=cdda5956f29648c1bb24d7e33d453f3a members=250000 elapsed=8.477 deadline_met=True
+2026-10-16 22:29:14,976 INFO donor_targeting.service.runtime job_completed id=9d29f75e7a4b4e08bc7e51effeeed76a members=250000 elapsed=2.133 deadline_met=True
+2026-10-16 22:29:17,089 INFO donor_targeting.service.runtime job_completed id=f267f45895044b0797527d2ab4173f41 members=250000 elapsed=4.237 deadline_met=True
+2026-10-16 22:29:19,207 INFO donor_targeting.service.runtime job_completed id=79445db17d96461f91d3c7edf61dcc3a members=250000 elapsed=6.349 deadline_met=True
+2026-10-16 22:29:21,332 INFO donor_targeting.service.runtime job_completed id=917da686984c467197da89b595a56920 members=250000 elapsed=8.467 deadline_met=True
+2026-10-16 22:29:23,558 INFO donor_targeting.service.runtime job_completed id=a3451c01c476482fb1a0691205a2c3a3 members=250000 elapsed=2.140 deadline_met=True
+2026-10-16 22:29:25,692 INFO donor_targeting.service.runtime job_completed id=9cccc83f6b8542d2b3b412c66eae639d members=250000 elapsed=4.267 deadline_met=True
+2026-10-16 22:29:27,828 INFO donor_targeting.service.runtime job_completed id=4ebbcf619f5f41aaaf344c3c547dd07c members=250000 elapsed=6.397 deadline_met=True
+2026-10-16 22:29:29,939 INFO donor_targeting.service.runtime job_completed id=b78101a23aee47368da84ddd576c40d8 members=250000 elapsed=8.500 deadline_met=True

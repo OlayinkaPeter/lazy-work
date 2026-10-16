@@ -1,0 +1,11 @@
+.venv
+.git
+__pycache__
+**/__pycache__
+.pytest_cache
+.ruff_cache
+data
+models
+reports
+evidence
+ai_sessions
